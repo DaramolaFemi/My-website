@@ -246,6 +246,7 @@ h2 {
     border-radius: 14px;
     box-shadow: 0 2px 16px rgba(106,48,147,0.08);
     width: 260px;
+    height: fit-content;
     padding: 20px;
     text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
@@ -618,6 +619,54 @@ section.show, .project-card.show {
     animation-delay: 0.3s;
 }
 
+/* testmonial swipwer integration */
+
+.mySwiper {
+  width: 700px;
+  height: 220px;
+  box-shadow: #a18cd1 0px 0px 20px 0px, #fbc2eb 0px 0px 20px 0px;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(106,48,147,0.10), 0 0 8px #a1c4fd33;
+    padding: 24px;
+    position: relative;
+    text-align: center;
+}
+
+.swiper-pagination{
+    bottom: 10px;
+    color: #6a3093 !important;
+}
+
+.swiper-scrollbar {
+    background: #bca4cd !important;
+    border-radius: 10px;
+    height: 8px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    display: none !important;
+}
+
+/* responsive */
+
+@media (max-width: 700px) {
+  .mySwiper {
+  width: 400px;
+  height: 250px;
+  box-shadow: #a18cd1 0px 0px 20px 0px, #fbc2eb 0px 0px 20px 0px;
+}
+
+}
+
 @keyframes growSkillBar {
     from { width: 0; }
     to { width: var(--level); }
@@ -634,6 +683,8 @@ section.show, .project-card.show {
     opacity: 0.3;
     z-index: 0;
 }
+
+
 
 
 
@@ -764,7 +815,107 @@ section.show, .project-card.show {
 }
 
 
+/* work expi css */
 
+ .timeline-container {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        /* The vertical line */
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 3px;
+            background-color: #e5e7eb;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1.5px;
+        }
+        
+        /* Container around content */
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        
+        /* The circles on the timeline */
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #4f46e5;
+            border: 4px solid white;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        /* Place the container to the left */
+        .left {
+            left: 0;
+        }
+        
+        /* Place the container to the right */
+        .right {
+            left: 50%;
+        }
+        
+        /* Fix the circle for containers on the right side */
+        .right::after {
+            left: -10px;
+        }
+        
+        /* Fix the circle for containers on the left side */
+        .left::after {
+            right: -10px;
+        }
+        
+        /* The actual content */
+        .timeline-content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .timeline-content:hover {
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            transform: translateY(-3px);
+        }
+        
+        /* Mobile timeline */
+        @media screen and (max-width: 768px) {
+            /* Place the timeline to the left */
+            .timeline::after {
+                left: 31px;
+            }
+            
+            /* Full-width containers */
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            /* Make sure all circles are at the same spot */
+            .timeline-item::after {
+                left: 21px;
+            }
+            
+            /* Make all right containers behave like the left ones */
+            .right {
+                left: 0;
+            }
+        }
 
 
 
@@ -911,8 +1062,9 @@ a[href="mailto:your@email.com"].contact-btn {
   }
 
   .pro-about .about-photo img {
-    width: 180px;
+    width: 200px;
     height:200px;
+    border-radius: 50%;
     margin-bottom: 12px;
 
   }

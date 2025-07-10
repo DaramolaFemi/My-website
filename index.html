@@ -17,7 +17,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Italianno&family=Libertinus+Math&family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+<!-- swiper libary -->
+ <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <link href="https://fonts.googleapis.com/css?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
@@ -82,14 +86,16 @@
 
     <section id="projects" class="projects-section">
         <h2>Projects</h2>
+        
+
+        <div class="projects-grid">
          <div class="project-card">
                 <img src="Frostyimages/webapp3.jpeg" alt="Project 4">
                 <h3>E-commerce Website</h3>
                 <p>I designed a sleek, modern e-commerce website tailored for a small business, combining clean aesthetics with intuitive navigation. The interface is visually engaging and mobile-friendly, making it easy for customers to browse, shop, and check out seamlessly. From product displays to the checkout flow, every detail was crafted to create a smooth, user-first shopping experience.</p>
-            <button>view</button>
+            <!-- <button>view</button> optional.. -->
             </div>
 
-        <div class="projects-grid">
             <div class="project-card">
                 <img src="Frostyimages/webapp1.jpeg" alt="Project 1">
                 <h3>DRS Website</h3>
@@ -99,7 +105,7 @@
             
             <div class="project-card">
                 <img src="Frostyimages/oldportfolio.png" alt="Project 3">
-                <h3>Personal Webapp </h3>
+                <h3>Personal Web-app </h3>
                 <p>A web app created to display services and skills of a fellow designer. This website only made use of css3 and css animation coupled with html. it is fully responsive and user user-friendly.</p>
             
              </div>
@@ -156,15 +162,141 @@
                 <span class="skill-name">Node.js</span>
                 <div class="skill-bar"><div class="skill-level" style="--level:78%"></div></div>
             </div>
+
+             <div class="skill-card">
+                <span class="skill-icon" data-tooltip="Node.js"><i class="fab fa-node-js"></i></span>
+                <span class="skill-name">express.js</span>
+                <div class="skill-bar"><div class="skill-level" style="--level:78%"></div></div>
+            </div>
+
+             <div class="skill-card">
+                <img width="40" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png" alt="Tailwind CSS" class="w-8 h-8">
+                <span class="skill-name">tailwind css</span>
+                <div class="skill-bar"><div class="skill-level" style="--level:78%"></div></div>
+            </div>
         </div>
     </section>
+
+    <!-- the line between sections -->
+    <hr class="section-divider">
+    
+<section id="testimonials" class=""> 
+<!-- work expirence start -->
+
+<div class="timeline-container">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">Work Experience</h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">My professional journey through the years</p>
+        
+        <div class="timeline">
+            <!-- Item 1 -->
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-indigo-100 p-2 rounded-full mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Senior Product Designer</h3>
+                            <p class="text-indigo-600 font-medium">TechCorp Inc. • 2021-Present</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">Led the redesign of the company's flagship product, resulting in a 35% increase in user engagement. Managed a team of 4 designers and collaborated closely with engineering.</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-sm">UI/UX Design</span>
+                        <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-sm">Team Leadership</span>
+                        <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-sm">Figma</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Item 2 -->
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-indigo-100 p-2 rounded-full mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Product Designer</h3>
+                            <p class="text-indigo-600 font-medium">DesignHub • 2018-2021</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">Designed and prototyped new features for SaaS platform used by 50,000+ customers. Conducted user research and A/B testing to validate design decisions.</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-sm">User Research</span>
+                        <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-sm">Prototyping</span>
+                        <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-sm">Adobe XD</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Item 3 -->
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-indigo-100 p-2 rounded-full mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">UI/UX Intern</h3>
+                            <p class="text-indigo-600 font-medium">Creative Studio • Summer 2017</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">Assisted senior designers with client projects, created wireframes and mockups, and participated in client presentations. Designed marketing materials for 3 major campaigns.</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-sm">Wireframing</span>
+                        <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-sm">Branding</span>
+                        <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-sm">Sketch</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   </section>
+    <!--end....  -->
 
 
    <!-- the line between sections -->
     <hr class="section-divider">
-
-
+    
 <section id="testimonials" class="testimonials-section">
+      <h2>Testimonials</h2>
+  
+<!-- Slider main container -->
+  <swiper-container class="mySwiper" init="false">
+    <swiper-slide class="swiper-slide">
+ <p class="testimonial-text">"Femi is a rare talent—his technical skills and communication are top-notch. Our project was delivered ahead of schedule and exceeded expectations."</p>
+<div class="testimonial-client">
+    <img src="Frostyimages/client1.png" alt="Client 1">
+    <span class="client-name"> Victoria Felix, Olivia's </span>
+    </div>
+    </swiper-slide>
+    <swiper-slide class="swiper-slide">
+    <p class="testimonial-text">"Working with Femi was a pleasure. He brought our vision to life and made the process seamless from start to finish."</p>
+    <div class="testimonial-client">
+        <img src="Frostyimages/client2.png" alt="Client 2">
+        <span class="client-name">Dele Sah, Dele Soul</span>
+    </div>
+    </swiper-slide>
+    <swiper-slide class="swiper-slide">
+    <p class="testimonial-text">"Professional, creative, and reliable. I highly recommend Femi for any web development project."</p>
+    <div class="testimonial-client">
+        <img src="Frostyimages/client3.png" alt="Client 3">
+        <span class="client-name">Donna Lee, Noah & Donna</span>
+    </div>    
+    </swiper-slide>
+   
+  </swiper-container>
+
+  </section>
+<!-- <section id="testimonials" class="testimonials-section">
     <h2>Testimonials</h2>
     <div class="testimonial-slider">
         <button class="testimonial-arrow left" aria-label="Previous testimonial">&#10094;</button>
@@ -194,7 +326,7 @@
         </div>
         <button class="testimonial-arrow right" aria-label="Next testimonial">&#10095;</button>
     </div>
-</section>
+</section> -->
 
 
     <!-- the line between sections -->
@@ -212,8 +344,8 @@
                 <a href="https://linkedin.com/in/yourlinkedin" class="social-link" target="_blank" aria-label="LinkedIn">
                     <span class="social-icon"><i class="fab fa-linkedin"></i></span> LinkedIn
                 </a>
-                <a href="https://www.instagram.com/femidarams?igsh=MTJ0aXh4Zm9sZzN4ZA%3D%3D&utm_source=qr" class="social-link" target="_blank" aria-label="LinkedIn">
-                    <span class="social-icon"><i class="fab fa-instagram"></i> <span> instagram
+               <a href="https://www.instagram.com/femidarams?igsh=MTJ0aXh4Zm9sZzN4ZA%3D%3D&utm_source=qr" class="social-link" target="_blank" aria-label="LinkedIn">
+                    <span class="social-icon"><i class="fab fa-linkedin"></i></span> instagram
                 </a>
             </div>
         </div>
@@ -225,5 +357,43 @@
     </footer>
 
     <script src="frosty.js"></script>
+    <!-- little bit of tailwind for work expi-->
+         <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
+        // swiper initialization  code
+    const swiperEl = document.querySelector('swiper-container')
+
+    const params = {
+      injectStyles: [`
+      .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 12px;
+        color: #000;
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.2);
+      }
+
+      .swiper-pagination-bullet-active {
+        color: #fff;
+        background: #007aff;
+      }
+      `],
+      pagination: {
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+      },
+    }
+
+    Object.assign(swiperEl, params)
+
+    swiperEl.initialize();
+  
+    </script>
 </body>
 </html>

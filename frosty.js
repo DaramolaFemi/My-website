@@ -72,23 +72,25 @@ if (navToggle && navLinks) {
 
 
 
-// --- Testimonial Slider (Autoplay Only) ---
 
-const testimonialCards = document.querySelectorAll('.testimonial-card');
-let testimonialIndex = 0;
 
-function showTestimonial(idx) {
-    testimonialCards.forEach((card, i) => {
-        card.classList.toggle('active', i === idx);
-    });
-}
+// // --- Testimonial Slider (Autoplay Only) ---
 
-function nextTestimonial() {
-    testimonialIndex = (testimonialIndex + 1) % testimonialCards.length;
-    showTestimonial(testimonialIndex);
-}
+// const testimonialCards = document.querySelectorAll('.testimonial-card');
+// let testimonialIndex = 0;
 
-if (testimonialCards.length) {
-    showTestimonial(testimonialIndex);
-    setInterval(nextTestimonial, 5000); // Change every 5 seconds
-}
+// function showTestimonial(idx) {
+//     testimonialCards.forEach((card, i) => {
+//         card.classList.toggle('active', i === idx);
+//     });
+// }
+
+// function nextTestimonial() {
+//     testimonialIndex = (testimonialIndex + 1) % testimonialCards.length;
+//     showTestimonial(testimonialIndex);
+// }
+
+// if (testimonialCards.length) {
+//     showTestimonial(testimonialIndex);
+//     setInterval(nextTestimonial, 5000); // Change every 5 seconds
+// }
