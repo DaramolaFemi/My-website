@@ -9,6 +9,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+const closeNav = document.getElementById('closeNav');
+
 // 2. Scroll reveal animation for sections
 const revealElements = document.querySelectorAll('section, .project-card');
 const revealOnScroll = () => {
@@ -52,12 +54,20 @@ const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
 if (navToggle && navLinks) {
     navToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('open');
+        navLinks.classList.add('open');
     });
+    
     // just so you know this motherfucker works
     navLinks.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => navLinks.classList.remove('open'));
     });
+
+     closeNav.addEventListener('click', ()=>{
+            navLinks.classList.remove('open');
+            console.log('dara');
+            
+        })
+
 }
 
 
