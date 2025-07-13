@@ -74,14 +74,13 @@ body.loaded {
     width: 100%;
 }
 .fa-times{
-    font-size: 1.5rem;
-    color: #6a3093;
-    cursor: pointer;
-    position: absolute;
-    top: 20px; right: 20px;
+    display: none;
 }
 
+
+
 /* Hamburger menu for mobile */
+
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -90,6 +89,23 @@ body.loaded {
     border: none;
     cursor: pointer;
     z-index: 90;
+}
+.fa-times{ font-size: 1.5rem;
+    color: #6a3093;
+    cursor: pointer;
+    position: absolute;
+    top: 20px; right: 20px;
+    display: block;
+}
+/* responsive close nav */
+@media (min-width: 800px) {
+  .fa-times{ font-size: 1.5rem;
+    color: red;
+    cursor: pointer;
+    position: absolute;
+    top: 20px; right: 20px;
+    display: none !important;
+}
 }
 .nav-toggle span {
     display: block;
@@ -125,6 +141,7 @@ body.loaded {
   .nav-toggle {
     display: flex;
   }
+ 
 }
 @media (max-width: 500px) {
   .portfolio-logo {
@@ -253,7 +270,7 @@ h2 {
 }
 
 .project-card img {
-    width: 100%;
+    width: max-content;
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -516,7 +533,7 @@ section.show, .project-card.show {
 
 .pro-skills .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 28px;
     margin-top: 30px;
 }
@@ -525,7 +542,8 @@ section.show, .project-card.show {
     background: rgba(245,245,255,0.95);
     border-radius: 16px;
     box-shadow: 0 2px 16px rgba(106,48,147,0.10), 0 0 8px #a1c4fd33;
-    padding: 24px 18px 18px 18px;
+    justify-content: center;
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -821,7 +839,7 @@ section.show, .project-card.show {
             position: relative;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 40px 0px;
         }
         
         /* The vertical line */
@@ -838,7 +856,7 @@ section.show, .project-card.show {
         
         /* Container around content */
         .timeline-item {
-            padding: 10px 40px;
+            padding: 10px 20px;
             position: relative;
             width: 50%;
             box-sizing: border-box;
@@ -879,7 +897,7 @@ section.show, .project-card.show {
         
         /* The actual content */
         .timeline-content {
-            padding: 20px 30px;
+            padding: 20px 10px;
             background-color: white;
             position: relative;
             border-radius: 8px;

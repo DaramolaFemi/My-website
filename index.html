@@ -83,12 +83,12 @@
 
 <hr class="section-divider">
 
-
-    <section id="projects" class="projects-section">
-        <h2>Projects</h2>
+<!-- rebuilding the projects styling with tailwind -->
+    <section id="projects" class="">
+        <h2 class="text-2xl pb-10 font-semibold">Projects</h2>
         
 
-        <div class="projects-grid">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
          <div class="project-card">
                 <img src="Frostyimages/webapp3.jpeg" alt="Project 4">
                 <h3>E-commerce Website</h3>
@@ -102,7 +102,14 @@
                 <p>Year 2022, I and my team led the end-to-end design and development of a production-grade website for a U.S based company, including payment gateway integration and backend architecture management.</p>
             </div>
 
-            
+            <div class="project-card">
+                <img src="Frostyimages/webapp2.jpeg" alt="Project 2">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio website showcasing my skills and projects. The site features a modern design, responsive layout, and smooth animations to enhance user experience.
+                     designed a sleek, modern e-commerce website tailored for a small business, combining clean aesthetics with intuitive navigation. The interface is visually engaging and mobile-friendly, making it easy for customers to browse, shop, and check out seamlessly. From product displays t
+                </p>
+            </div>
+
             <div class="project-card">
                 <img src="Frostyimages/oldportfolio.png" alt="Project 3">
                 <h3>Personal Web-app </h3>
@@ -111,13 +118,7 @@
              </div>
 <!-- I Added more project card -->
 
-            <div class="project-card">
-                <img src="Frostyimages/webapp2.jpeg" alt="Project 2">
-                <h3>Portfolio Website</h3>
-                <p>A personal portfolio website showcasing my skills and projects. The site features a modern design, responsive layout, and smooth animations to enhance user experience.
-                     designed a sleek, modern e-commerce website tailored for a small business, combining clean aesthetics with intuitive navigation. The interface is visually engaging and mobile-friendly, making it easy for customers to browse, shop, and check out seamlessly. From product displays t
-                </p>
-            </div>
+            
 
            
     </section>
@@ -130,49 +131,45 @@
 
 
     <section id="skills" class="skills-section pro-skills">
-        <h2>Skills</h2>
+        <h2 class="text-2xl pb-10 font-semibold">Skills</h2>
         <div class="skills-grid">
             <div class="skill-card">
                 <span class="skill-icon" data-tooltip="HTML5"><i class="fab fa-html5"></i></span>
                 <span class="skill-name">HTML5</span>
-                <div class="skill-bar"><div class="skill-level" style="--level:90%"></div></div>
             </div>
             <div class="skill-card">
                 <span class="skill-icon" data-tooltip="CSS3"><i class="fab fa-css3-alt"></i></span>
                 <span class="skill-name">CSS3</span>
-                <div class="skill-bar"><div class="skill-level" style="--level:88%"></div></div>
-            </div>
+              </div>
             <div class="skill-card">
                 <span class="skill-icon" data-tooltip="JavaScript"><i class="fab fa-js-square"></i></span>
                 <span class="skill-name">JavaScript</span>
-                <div class="skill-bar"><div class="skill-level" style="--level:85%"></div></div>
             </div>
             <div class="skill-card">
                 <span class="skill-icon" data-tooltip="React"><i class="fab fa-react"></i></span>
                 <span class="skill-name">React</span>
-                <div class="skill-bar"><div class="skill-level" style="--level:80%"></div></div>
             </div>
             <div class="skill-card">
                 <span class="skill-icon" data-tooltip="TypeScript"><i class="fab fa-js"></i></span>
                 <span class="skill-name">TypeScript</span>
-                <div class="skill-bar"><div class="skill-level" style="--level:75%"></div></div>
             </div>
             <div class="skill-card">
                 <span class="skill-icon" data-tooltip="Node.js"><i class="fab fa-node-js"></i></span>
                 <span class="skill-name">Node.js</span>
-                <div class="skill-bar"><div class="skill-level" style="--level:78%"></div></div>
             </div>
 
              <div class="skill-card">
-                <span class="skill-icon" data-tooltip="Node.js"><i class="fab fa-node-js"></i></span>
+                <span class="skill-icon" data-tooltip="express.js"><i class="fab fa-node-js"></i></span>
                 <span class="skill-name">express.js</span>
-                <div class="skill-bar"><div class="skill-level" style="--level:78%"></div></div>
             </div>
 
              <div class="skill-card">
                 <img width="40" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png" alt="Tailwind CSS" class="w-8 h-8">
                 <span class="skill-name">tailwind css</span>
-                <div class="skill-bar"><div class="skill-level" style="--level:78%"></div></div>
+            </div>
+            <div class="skill-card">
+                <span class="skill-icon" data-tooltip="content-writing"><i class="fa-solid fa-pen-to-square"></i></span>
+                <span class="skill-name text-center">content writting</span>
             </div>
         </div>
     </section>
@@ -180,11 +177,11 @@
     <!-- the line between sections -->
     <hr class="section-divider">
     
-<section id="testimonials" class=""> 
+<section id="" class=""> 
 <!-- work expirence start -->
 
 <div class="timeline-container">
-        <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">Work Experience</h2>
+        <h2 class="text-2xl text-purple-900 font-bold text-center text-gray-800 mb-2">Work Experience</h2>
         <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">My professional journey through the years</p>
         
         <div class="timeline">
@@ -198,7 +195,7 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold text-gray-800">Senior Product Designer</h3>
+                            <h3 class="md:text-xl text-base font-semibold text-gray-800">Senior Product Designer</h3>
                             <p class="text-indigo-600 font-medium">TechCorp Inc. • 2021-Present</p>
                         </div>
                     </div>
@@ -221,7 +218,7 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold text-gray-800">Product Designer</h3>
+                            <h3 class="md:text-xl text-base font-semibold text-gray-800">Product Designer</h3>
                             <p class="text-indigo-600 font-medium">DesignHub • 2018-2021</p>
                         </div>
                     </div>
@@ -244,7 +241,7 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold text-gray-800">UI/UX Intern</h3>
+                            <h3 class="md:text-xl text-base font-semibold text-gray-800">UI/UX Intern</h3>
                             <p class="text-indigo-600 font-medium">Creative Studio • Summer 2017</p>
                         </div>
                     </div>
