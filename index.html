@@ -52,31 +52,40 @@
         </div>
      </header>
 <!-- na here my problem start. Body -->
+ <hr class="section-divider">
 
-    <section id="about" class="about-section pro-about">
-    <div class="about-content">
-        <div class="about-photo">
-            <img src="Frostyimages/FemiFuture.png" alt="Daramola Femi" />
+
+    <section id="" class="">
+    <div class="flex flex-col w-full justify-between  items-center md:flex-row flex-wrap w-full">
+        <div class="md:w-[30%] mx-auto w-full">
+            <img src="Frostyimages/FemiFuture.png" class="md:w-[400px] md:h-[250px] mx-auto w-[200px] h-[200px] rounded-full" alt="Daramola Femi" />
         </div>
-        <div class="about-text">
-            <h2>About Me</h2>
-            <p class="about-highlight">
-                <strong>Hi, I'm Femi — a passionate Full Stack Engineer & Technical Writer.</strong>
+        <div class="md:w-[60%] md:text-left text-center w-full">
+            <h2 class="text-2xl mb-2 font-bold family">About Me</h2>
+            <p class="about-highlight family mb-3">
+                <strong class="text-[#370d56]">Hi, I'm Femi, a passionate Full Stack Engineer & Technical Writer.</strong>
                 I specialize in building robust, scalable web solutions and crafting documentation that empowers users and teams. My mission is to bridge the gap between complex technology and human clarity.</p>
                 
                 <ul class="about-strengths">
-                    <li><b>End-to-End Development:</b> From intuitive frontends to resilient backends.</li>
-                    <li><b>Clear Communication:</b> Expert at translating technical concepts for any audience.</li>
-                    <li><b>Collaboration:</b> Thrive in cross-functional teams and fast-paced environments.</li>
-                    <li><b>Continuous Learning:</b> Always exploring new tools, frameworks, and best practices.</li>
+                    <li><b>End-to-End Development: <hr class="md:w-[30%] w-[60%] mx-auto sm:mx-0 aboutHr"> </b> From intuitive frontends to resilient backends.</li>
+                    <li><b>Clear Communication: <hr class="md:w-[30%] w-[50%] mx-auto sm:mx-0 aboutHr"></b> Expert at translating technical concepts for any audience.</li>
+                    <li><b>Continuous Learning: <hr class="md:w-[30%] w-[45%] mx-auto sm:mx-0 aboutHr"></b> Always exploring new tools, frameworks, and best practices.</li>
+                    <li><b>Collaboration: <hr class="md:w-[30%] w-[30%] mx-auto sm:mx-0 aboutHr"></b> Thrive in cross-functional teams and fast-paced environments.</li>
+
                 </ul>
-
-            <p class="about-call-to-action">
-                If you need someone who can <b>build, explain, and elevate</b> your digital products, let's connect!
+                <!-- connect -->
+                  <div class="flex flex-col justify-start text-center md:text-left mt-3 gap-3">
+ <p class="about-call-to-action text-lg w-full family">
+                If you need someone who can <br> <b class="text-[#370d56]">Build, Explain, and Elevate</b> <br> your digital products, let's connect!
             </p>
+            <a href="#contact" class="connect-button md:w-full mx-auto md:mx-0 w-32">
+            Connect
+            </a>
 
-        </div>
     </div>
+            </div>
+    </div>
+   
 </section>
 
     <!-- between sections -->
@@ -84,42 +93,51 @@
 <hr class="section-divider">
 
 <!-- rebuilding the projects styling with tailwind -->
-    <section id="projects" class="">
-        <h2 class="text-2xl pb-10 font-semibold">Projects</h2>
+    <section id="" class="w-full mx-auto flex bg-red flex-col justify-center">
+        <h2 class="text-2xl pb-10 text-center font-semibold">Projects</h2>
         
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
-         <div class="project-card">
-                <img src="Frostyimages/webapp3.jpeg" alt="Project 4">
-                <h3>E-commerce Website</h3>
-                <p>I designed a sleek, modern e-commerce website tailored for a small business, combining clean aesthetics with intuitive navigation. The interface is visually engaging and mobile-friendly, making it easy for customers to browse, shop, and check out seamlessly. From product displays to the checkout flow, every detail was crafted to create a smooth, user-first shopping experience.</p>
-            <!-- <button>view</button> optional.. -->
-            </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6">
 
-            <div class="project-card">
-                <img src="Frostyimages/webapp1.jpeg" alt="Project 1">
-                <h3>DRS Website</h3>
-                <p>Year 2022, I and my team led the end-to-end design and development of a production-grade website for a U.S based company, including payment gateway integration and backend architecture management.</p>
-            </div>
+       <!-- Project Card 1 -->
+  <div class="project-card flex flex-col h-full">
+    <div class="w-full h-64 overflow-hidden rounded-lg mb-4">
+      <img src="Frostyimages/webapp3.jpeg" alt="Project 4" class="w-full h-full object-cover">
+    </div>
+    <h3 class="text-lg font-semibold mb-2">E-commerce Website</h3>
+    <p class="text-gray-600 flex-grow">I designed a sleek, modern e-commerce website tailored for a small business, combining clean aesthetics</p>
+  </div>
 
-            <div class="project-card">
-                <img src="Frostyimages/webapp2.jpeg" alt="Project 2">
-                <h3>Portfolio Website</h3>
-                <p>A personal portfolio website showcasing my skills and projects. The site features a modern design, responsive layout, and smooth animations to enhance user experience.
-                     designed a sleek, modern e-commerce website tailored for a small business, combining clean aesthetics with intuitive navigation. The interface is visually engaging and mobile-friendly, making it easy for customers to browse, shop, and check out seamlessly. From product displays t
-                </p>
-            </div>
+  <!-- Project Card 2 -->
+  <div class="project-card flex flex-col h-full">
+    <div class="w-full h-64 overflow-hidden rounded-lg mb-4">
+      <img src="Frostyimages/webapp1.jpeg" alt="Project 1" class="w-full h-full object-cover">
+    </div>
+    <h3 class="text-lg font-semibold mb-2">DRS Website</h3>
+    <p class="text-gray-600 flex-grow">Year 2022, I and my team led the end-to-end design and development of a production-grade website</p>
+  </div>
 
-            <div class="project-card">
-                <img src="Frostyimages/oldportfolio.png" alt="Project 3">
-                <h3>Personal Web-app </h3>
-                <p>A web app created to display services and skills of a fellow designer. This website only made use of css3 and css animation coupled with html. it is fully responsive and user user-friendly.</p>
-            
-             </div>
+  <!-- Project Card 3 -->
+  <div class="project-card flex flex-col h-full">
+    <div class="w-full h-64 overflow-hidden rounded-lg mb-4">
+      <img src="Frostyimages/webapp2.jpeg" alt="Project 2" class="w-full h-full object-cover">
+    </div>
+    <h3 class="text-lg font-semibold mb-2">Portfolio Website</h3>
+    <p class="text-gray-600 flex-grow">A personal portfolio website showcasing my skills and projects. The site features a modern design, responsive layout, and smooth transitions</p>
+  </div>
+
+  <!-- Project Card 4 -->
+  <div class="project-card flex flex-col h-full">
+    <div class="w-full h-64 overflow-hidden rounded-lg mb-4">
+      <img src="Frostyimages/oldportfolio.png" alt="Project 3" class="w-full h-full object-cover">
+    </div>
+    <h3 class="text-lg font-semibold mb-2">Personal Web-app</h3>
+    <p class="text-gray-600 flex-grow">A web app created to display services and skills of a fellow designer. This website only made use of css3</p>
+  </div>     
+
+
+        </div>
 <!-- I Added more project card -->
-
-            
-
            
     </section>
 <!-- clients section-->
@@ -132,7 +150,7 @@
 
     <section id="skills" class="skills-section pro-skills">
         <h2 class="text-2xl pb-10 font-semibold">Skills</h2>
-        <div class="skills-grid">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-5">
             <div class="skill-card">
                 <span class="skill-icon" data-tooltip="HTML5"><i class="fab fa-html5"></i></span>
                 <span class="skill-name">HTML5</span>
@@ -168,8 +186,8 @@
                 <span class="skill-name">tailwind css</span>
             </div>
             <div class="skill-card">
-                <span class="skill-icon" data-tooltip="content-writing"><i class="fa-solid fa-pen-to-square"></i></span>
-                <span class="skill-name text-center">content writting</span>
+                <span class="skill-icon" data-tooltip="content-writing"><i  class="fa-solid fa-pen-to-square"></i></span>
+                <span class="skill-name text-center">Technical writting</span>
             </div>
         </div>
     </section>
